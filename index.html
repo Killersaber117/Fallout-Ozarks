@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fallout DnD Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Fallout DnD Character Creator</h1>
+    <p>Create your Wasteland legend</p>
+  </header>
+
+  <section>
+    <form id="character-form">
+      <label>Name: <input type="text" id="name" /></label><br>
+      <label>Race: 
+        <select id="race">
+          <option>Human</option>
+          <option>Ghoul</option>
+          <option>Super Mutant</option>
+          <option>Synth</option>
+        </select>
+      </label><br>
+      <label>Class:
+        <select id="class">
+          <option>Wastelander</option>
+          <option>Vault Dweller</option>
+          <option>Brotherhood Knight</option>
+          <option>Enclave Agent</option>
+        </select>
+      </label><br>
+      <button type="button" onclick="generateStats()">Create Character</button>
+    </form>
+  </section>
+
+  <section id="stats">
+    <h2>Stat Sheet</h2>
+    <div id="stat-output"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
